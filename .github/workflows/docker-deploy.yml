@@ -19,4 +19,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag playground:$TIMESTAMP
     - name: Run Docker Image
-      run: docker run playground:$TIMESTAMP -d -p 3000:80
+      run: docker run -d -p 3000:80 playground:$TIMESTAMP
